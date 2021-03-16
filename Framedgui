@@ -1,0 +1,344 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- This GUI is not stolen. My main channel named "Seirei" closed. So I moved to my friend's channel "Maou".
+
+
+-- Instances:
+
+
+local ScreenGui = Instance.new("ScreenGui")
+local Gui = Instance.new("Frame")
+local ComingSoon = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Soon = Instance.new("TextButton")
+local finduc = Instance.new("TextButton")
+local Esp = Instance.new("TextButton")
+local Autowin = Instance.new("TextButton")
+local _1hit = Instance.new("TextButton")
+local Inf = Instance.new("TextButton")
+local Target = Instance.new("TextButton")
+local mp5 = Instance.new("TextButton")
+local Credits = Instance.new("TextLabel")
+local Guiname = Instance.new("TextLabel")
+local findhunt = Instance.new("TextButton")
+local cmng = Instance.new("TextButton")
+local speed = Instance.new("TextBox")
+local setspeed = Instance.new("TextButton")
+local setjump = Instance.new("TextButton")
+local jump = Instance.new("TextBox")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+
+Gui.Name = "Gui"
+Gui.Parent = ScreenGui
+Gui.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Gui.Position = UDim2.new(0.0931623951, 0, 0.392744422, 0)
+Gui.Size = UDim2.new(0, 457, 0, 283)
+Gui.Active = true
+Gui.Draggable = true
+
+ComingSoon.Name = "Coming Soon"
+ComingSoon.Parent = Gui
+ComingSoon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ComingSoon.Position = UDim2.new(1, 0, 0, 0)
+ComingSoon.Size = UDim2.new(0, 171, 0, 286)
+ComingSoon.Visible = false
+
+TextLabel.Parent = ComingSoon
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.Position = UDim2.new(0, 0, 0.37062937, 0)
+TextLabel.Size = UDim2.new(0, 171, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "coming soon"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+Soon.Name = "Soon"
+Soon.Parent = ComingSoon
+Soon.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Soon.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Soon.BorderSizePixel = 0
+Soon.Position = UDim2.new(0.879357874, 0, 0.916046977, 0)
+Soon.Size = UDim2.new(0, 66, 0, 23)
+Soon.Font = Enum.Font.Roboto
+Soon.Text = "-->"
+Soon.TextColor3 = Color3.fromRGB(255, 255, 255)
+Soon.TextSize = 15.000
+
+finduc.Name = "finduc"
+finduc.Parent = Gui
+finduc.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+finduc.BorderColor3 = Color3.fromRGB(27, 42, 53)
+finduc.BorderSizePixel = 0
+finduc.Position = UDim2.new(0.516121268, 0, 0.195804194, 0)
+finduc.Size = UDim2.new(0, 95, 0, 50)
+finduc.Font = Enum.Font.Roboto
+finduc.Text = "Find Under"
+finduc.TextColor3 = Color3.fromRGB(255, 255, 255)
+finduc.TextSize = 15.000
+finduc.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/AClassicSecretAccount/v0.5/main/GuiUnder'))()
+end)
+
+Esp.Name = "Esp"
+Esp.Parent = Gui
+Esp.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Esp.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Esp.BorderSizePixel = 0
+Esp.Position = UDim2.new(0.275421023, 0, 0.45104897, 0)
+Esp.Size = UDim2.new(0, 95, 0, 50)
+Esp.Font = Enum.Font.Roboto
+Esp.Text = "Esp Gui"
+Esp.TextColor3 = Color3.fromRGB(255, 255, 255)
+Esp.TextSize = 15.000
+Esp.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/XggXWolf/Esp/main/source'))()
+end)
+
+Autowin.Name = "Autowin"
+Autowin.Parent = Gui
+Autowin.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Autowin.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Autowin.BorderSizePixel = 0
+Autowin.Position = UDim2.new(0.0399850309, 0, 0.706293702, 0)
+Autowin.Size = UDim2.new(0, 95, 0, 50)
+Autowin.Font = Enum.Font.Roboto
+Autowin.Text = "Auto Win"
+Autowin.TextColor3 = Color3.fromRGB(255, 255, 255)
+Autowin.TextSize = 15.000
+Autowin.MouseButton1Down:connect(function()
+	while wait()do local
+		Event = game:GetService("Workspace").Events.TouchEvent
+		Event:FireServer()
+
+	end;
+end)
+
+_1hit.Name = "1hit"
+_1hit.Parent = Gui
+_1hit.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+_1hit.BorderColor3 = Color3.fromRGB(27, 42, 53)
+_1hit.BorderSizePixel = 0
+_1hit.Position = UDim2.new(0.275421023, 0, 0.195804194, 0)
+_1hit.Size = UDim2.new(0, 95, 0, 50)
+_1hit.Font = Enum.Font.Roboto
+_1hit.Text = "Broken"
+_1hit.TextColor3 = Color3.fromRGB(255, 255, 255)
+_1hit.TextSize = 15.000
+_1hit.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/XggXWolf/Esp/main/1Hit'))()
+end)
+
+
+Inf.Name = "Inf"
+Inf.Parent = Gui
+Inf.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Inf.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Inf.BorderSizePixel = 0
+Inf.Position = UDim2.new(0.0436681211, 0, 0.195804194, 0)
+Inf.Size = UDim2.new(0, 95, 0, 50)
+Inf.Font = Enum.Font.Roboto
+Inf.Text = "Infinite Ammo"
+Inf.TextColor3 = Color3.fromRGB(255, 255, 255)
+Inf.TextSize = 15.000
+Inf.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/XggXWolf/Esp/main/Infinite%20ammo'))()
+end)
+
+
+Target.Name = "Target"
+Target.Parent = Gui
+Target.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Target.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Target.BorderSizePixel = 0
+Target.Position = UDim2.new(0.0399850309, 0, 0.45104897, 0)
+Target.Size = UDim2.new(0, 95, 0, 50)
+Target.Font = Enum.Font.Roboto
+Target.Text = "Find Target"
+Target.TextColor3 = Color3.fromRGB(255, 255, 255)
+Target.TextSize = 15.000
+Target.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/AClassicSecretAccount/v0.5/main/GuiTarget'))()
+end)
+
+mp5.Name = "mp5"
+mp5.Parent = Gui
+mp5.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+mp5.BorderColor3 = Color3.fromRGB(27, 42, 53)
+mp5.BorderSizePixel = 0
+mp5.Position = UDim2.new(0.275421023, 0, 0.706293702, 0)
+mp5.Size = UDim2.new(0, 95, 0, 50)
+mp5.Font = Enum.Font.Roboto
+mp5.Text = "Broken"
+mp5.TextColor3 = Color3.fromRGB(255, 255, 255)
+mp5.TextSize = 15.000
+mp5.MouseButton1Down:connect(function()
+	local y = 1
+
+	while y > 0 do
+		wait()
+		game.Players.LocalPlayer.Backpack.MP5.Damage.Value = 300
+
+	end
+
+	y = 0
+	y = 1
+end)
+
+Credits.Name = "Credits"
+Credits.Parent = Gui
+Credits.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Credits.BorderSizePixel = 0
+Credits.Position = UDim2.new(-0.000933118281, 35, 0.91958034, 0)
+Credits.Size = UDim2.new(0, 127, 0, 22)
+Credits.Font = Enum.Font.Roboto
+Credits.Text = "Made By Maou DDRace on YT"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextSize = 14.000
+
+Guiname.Name = "Guiname"
+Guiname.Parent = Gui
+Guiname.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Guiname.BorderSizePixel = 0
+Guiname.Position = UDim2.new(-0.000933077186, 0, -0.00132650137, 0)
+Guiname.Size = UDim2.new(0, 229, 0, 50)
+Guiname.Font = Enum.Font.Roboto
+Guiname.Text = "FramedGui v0.5"
+Guiname.TextColor3 = Color3.fromRGB(255, 255, 255)
+Guiname.TextSize = 20.000
+
+findhunt.Name = "findhunt"
+findhunt.Parent = Gui
+findhunt.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+findhunt.BorderColor3 = Color3.fromRGB(27, 42, 53)
+findhunt.BorderSizePixel = 0
+findhunt.Position = UDim2.new(0.516121268, 0, 0.450221181, 0)
+findhunt.Size = UDim2.new(0, 95, 0, 50)
+findhunt.Font = Enum.Font.Roboto
+findhunt.Text = "Coming very soon"
+findhunt.TextColor3 = Color3.fromRGB(255, 255, 255)
+findhunt.TextSize = 14.000
+
+cmng.Name = "cmng"
+cmng.Parent = Gui
+cmng.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+cmng.BorderColor3 = Color3.fromRGB(27, 42, 53)
+cmng.BorderSizePixel = 0
+cmng.Position = UDim2.new(0.516121268, 0, 0.704638124, 0)
+cmng.Size = UDim2.new(0, 95, 0, 50)
+cmng.Font = Enum.Font.Roboto
+cmng.Text = "Auto Kill"
+cmng.TextColor3 = Color3.fromRGB(255, 255, 255)
+cmng.TextSize = 14.000
+cmng.MouseButton1Down:connect(function()
+	local u = 1
+
+while u > 0 do  
+local success, problem = pcall(function()
+    
+wait(.01)
+u = 0
+u = 1
+
+
+ localplr = game.Players.LocalPlayer
+ yourcharacter = localplr.Character
+
+local yourface = yourcharacter.Head.face
+
+
+
+for _,player in pairs(game:GetService("Players"):GetPlayers())do
+        if player and player.Character then
+
+        local character = player.Character
+        local face = character.Head.face
+        local tool = localplr.Backpack["Check Target"].PistolPart.SurfaceGui.Phone.FaceColor.FaceImage.Image
+
+
+            if face:IsA("Decal") then-- if it's a validz face, then...
+                if tool == face.Texture then
+                    local targetplayer = face.Parent.Parent.HumanoidRootPart
+                    print(targetplayer)
+
+					yourcharacter.HumanoidRootPart.CFrame = targetplayer.CFrame
+
+    
+            end
+        end
+    
+
+    end
+end
+
+end)
+
+if success then
+    
+else
+    
+end
+
+
+end
+
+
+u = 0
+u = 1
+end)
+
+speed.Name = "speed"
+speed.Parent = Gui
+speed.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+speed.BorderSizePixel = 0
+speed.Position = UDim2.new(0.745966673, 0, 0.631171167, 0)
+speed.Size = UDim2.new(0, 94, 0, 25)
+speed.Font = Enum.Font.Roboto
+speed.Text = ""
+speed.TextColor3 = Color3.fromRGB(255, 255, 255)
+speed.TextSize = 14.000
+
+setspeed.Name = "setspeed"
+setspeed.Parent = Gui
+setspeed.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+setspeed.BorderColor3 = Color3.fromRGB(27, 42, 53)
+setspeed.BorderSizePixel = 0
+setspeed.Position = UDim2.new(0.746081591, 0, 0.77958113, 0)
+setspeed.Size = UDim2.new(0, 94, 0, 28)
+setspeed.Font = Enum.Font.Roboto
+setspeed.Text = "Set Speed"
+setspeed.TextColor3 = Color3.fromRGB(255, 255, 255)
+setspeed.TextSize = 15.000
+setspeed.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = tonumber(speed.Text)
+end)
+
+setjump.Name = "setjump"
+setjump.Parent = Gui
+setjump.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+setjump.BorderColor3 = Color3.fromRGB(27, 42, 53)
+setjump.BorderSizePixel = 0
+setjump.Position = UDim2.new(0.745052636, 0, 0.313150048, 0)
+setjump.Size = UDim2.new(0, 94, 0, 28)
+setjump.Font = Enum.Font.Roboto
+setjump.Text = "Set Jump"
+setjump.TextColor3 = Color3.fromRGB(255, 255, 255)
+setjump.TextSize = 15.000
+setjump.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = tonumber(jump.Text)
+end)
+
+jump.Name = "jump"
+jump.Parent = Gui
+jump.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+jump.BorderSizePixel = 0
+jump.Position = UDim2.new(0.744937658, 0, 0.193008691, 0)
+jump.Size = UDim2.new(0, 94, 0, 25)
+jump.Font = Enum.Font.Roboto
+jump.Text = ""
+jump.TextColor3 = Color3.fromRGB(255, 255, 255)
+jump.TextSize = 14.000
